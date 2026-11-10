@@ -1,0 +1,18 @@
+{
+  "name": "scenario-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram scenario bot connected to an n8n AI agent",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check src/config.js && node --check src/bot.js && node --check src/handlers/messages.js && node --check src/services/n8nClient.js && node --check src/services/sessions.js && node --check src/keyboards/menus.js && node --check src/constants/modes.js && node --check src/utils/text.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "telegraf": "^4.16.3"
+  }
+}
